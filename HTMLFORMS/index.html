@@ -21,6 +21,52 @@
 
                 <h1>Formulário de matrícula</h1>
                 <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+
+                <form method="post" enctype="multipart/form-data">
+                    <fieldset class="child-info">
+                        <legend>Informações da criança</legend>
+
+                        <div class="input-wrapper">
+                            <label name="fullname" for="fullname">Nome Completo</label>
+                            <input 
+                            name="fullname"
+                            id="fullname" 
+                            type="text"
+                            placeholder="Nome da criança">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label name="birthdate" for="birthdate">Data de nascimento</label>
+                            <input name="birthdate" id="birthdate" type="date">
+                        </div>
+
+                        <div class="select-wrapper">
+                            <label for="gender">Sexo</label>
+                            <select name="gender" id="gender">
+                                <option value="male">Masculino</option>
+                                <option value="female">Feminino</option>
+                            </select>
+                        </div>
+
+                        <div class="textarea-wrapper">
+                            <label for="medical-info">Informações médicas</label>
+                            <textarea name="medical-info" id="medical-info"
+                            cols="30"
+                            rows="4"
+                            placeholder="A criança possui alguma condição médica que a escola deve estar ciente?">
+                        </textarea>
+                        </div>
+
+                        <div class="droparea-wrapper">
+                            <input type="file" id="birthdate-file" name="birthdate-file">
+                            <img src="assets/icons/cloud-upload.svg" alt="ícone de upar imagem">
+                            <p>
+                                Clique aqui para <br>
+                                para selecionar os arquivos
+                            </p>
+                        </div>
+                    </fieldset>
+                </form>
             </div>
         </main>
 
